@@ -50,8 +50,8 @@ $base-text-light: #eee;
 
 
     body{
-        background: $base-theme-3;
         height: 100%;
+        background: $base-theme-3;
         font-family: $base-font-family;
         font-weight: 400;
         font-size: 1rem;
@@ -61,6 +61,7 @@ $base-text-light: #eee;
 
     h1, h2, h3, h4, h5 .site-link {
         font-family: $header-font-family-fallback;
+        padding: 0.5em;
     
         .wf-active & {
           font-family: $base-header-font-family;
@@ -76,23 +77,39 @@ $base-text-light: #eee;
         .app {
             margin: 3em auto;
             max-width: 98%;
-
+            header {
+                max-width:95%;
+                margin: auto;
             .alpha--header {
-                @include font-size(45px);
-                color: $base-theme-2;
+                @include font-size(45px, 1);
+                color: $base-theme-1;
                 font-weight: 800;
                 text-shadow: 
                 0px 4px 3px rgba(0,0,0,0.4),
                 0px 8px 13px rgba(0,0,0,0.1),
                 0px 18px 23px rgba(0,0,0,0.1);
+                margin-bottom: 0;
+                padding-bottom: 0;
+                text-transform: capitalize;
             }
+
+            .beta--header {
+                @extend .alpha--header;
+                @include font-size(22px);
+                text-transform: capitalize;
+                color: $base-white;
+                text-align: left;
+                margin-bottom: 1em;
+                padding-left:1em;
+            }
+        }
         }
     
     #jumbo {
-        
+        background: $base-theme-1;
+
         text-align: center;
-        color: $base-theme-2;
-        height: 100%;
+        min-height: 100%;
     }
     
   
@@ -120,11 +137,31 @@ $base-text-light: #eee;
     }
     
     #timer {
-        color: white;
+        background: $base-theme-2;
+        padding: 0.275em;
+        color: $base-theme-1;
     }
     
     #quiz {
-        color: white;
+       background: $base-theme-1;
+       padding: 10px;
+       max-width: 100%;
+       width: 98%;
+       
+       
+
+        label {
+            @include font-size(24px,1);
+            font-weight: 800;
+            cursor: pointer;
+            &:hover {
+                background: $base-theme-2;
+                color: $base-theme-1;
+                
+            }
+            
+        }
+
          
     }
     h2 {
@@ -136,7 +173,7 @@ $base-text-light: #eee;
     }
      
      #question {
-         color: white;
+         color: $base-theme-3;
          
      }
     
@@ -147,10 +184,11 @@ $base-text-light: #eee;
      }
     
      label {
-          color: white;
+          color: $base-theme-3;
          font-size: 25px;
          margin: 10px;
-         margin-left: 500px;
+        display: block;
+
      
      }
     
