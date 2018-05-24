@@ -45,66 +45,6 @@ var countStart = 20;
 
 
 // Triva Questions
-var questions = 
-	[
-
-		{
-			question: "What single city contains about 20% of the residents of its entire continent?",
-			answer: ["Mexico", "California", "Sydney"],
-			correctAnswer: "Sydney"
-		},
-		{
-			question: "Madagascar is an island located of the southeast coast of what continent?",
-			answer: ["Africa", "Poland", "Barzil", "Uruguay"],
-			correctAnswer: "Africa"
-		},
-		{
-			question: "Lake Tahoe straddles the border between which two U.S. states?",
-			answer: ["Illinois & Indiana", "Alabama & Georgia", "California & Nevada"],
-			correctAnswer: "California & Nevada"
-		},
-		{
-			question: "In what country would you find Mount Kilimanjaro?",
-			answer: ["Mexico", "California", "Tanzania"],
-			correctAnswer: "Tanzania"
-		},
-		{
-			question: "What is the capital of Iceland?",
-			answer: ["Kópavogur", "Reykjavik", "Grindavík", "Akranes"],
-			correctAnswer: "Reykjavik"
-		},
-		{
-			question: "What is the largest lake in Africa?",
-			answer: ["Lake Victoria", "Lake Tanganyika", "Lake Baikal", "Lake Kivu"],
-			correctAnswer: "Lake Victoria"
-		},
-		{
-			question: "The Alaskan Malamute is a type of what?",
-			answer: ["Reptilian", "Cat", "Dog"],
-			correctAnswer: "Dog"
-		},
-		{
-			question: "Which country is the second largest in South America by surface area?",
-			answer: ["Colombia", "Argentina", "Bolivia", "Brazil"],
-			correctAnswer: "Argentina"
-		},
-		{
-			question: "Which country is the second largest in Africa by surface area?",
-			answer: ["Algeria", "Lybia", "Sudan", "Democratic Republic of Congo"],
-			correctAnswer: "Democratic Republic of Congo"
-		},
-		{
-			question: "What is the highest(from sea level to top) mountain in Europe?",
-			answer: ["Mont Blanc", "Mount Shkhara", "Mount Ararat", "Mount Elbrus"],
-			correctAnswer: "Mount Elbrus"
-		},
-		{
-			question: "What is the longest river in Asia?",
-			answer: ["Yangtze", "Yenisei", "Yellow River", "OB"],
-			correctAnswer: "Yangtze"
-		}
-
-	];
 
 // Start Game - Hold in Object
     var game = {

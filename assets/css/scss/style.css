@@ -8461,12 +8461,16 @@ p, label, input, button {
 .app header .alpha--header, .app header .beta--header {
   font-size: 45px;
   font-size: 2.8125rem;
-  color: #ffeb3b;
   font-weight: 800;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
   padding-bottom: 0;
   text-transform: capitalize;
+}
+
+.app header .alpha--header a, .app header .beta--header a {
+  color: #ffeb3b;
+  text-decoration: none;
 }
 
 .app header .beta--header {
@@ -8492,8 +8496,10 @@ button {
   font-size: 1.125rem;
   line-height: 1.33333;
   font-weight: 600;
-  width: 100px;
-  height: 60px;
+  min-width: 100px;
+  max-width: 150px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #world {
